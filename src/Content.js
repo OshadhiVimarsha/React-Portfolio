@@ -70,6 +70,7 @@ export const content = {
     title: "Web Developer",
     name: "Oshadhi Vimarsha",
     btnText: "Hire Me",
+    link: "#contact",
     image: Hero_person,
     hero_content: [
       {
@@ -89,7 +90,7 @@ export const content = {
     description_2: "I am constantly committed to learning the latest technologies and best practices in the Web Development field. Through my portfolio, you can view my smaller projects and experiences, which clearly demonstrate my knowledge and dedication to web development.",
     name: "Oshadhi Vimarsha",
     email: "oshivimarsha1221@gmail.com",
-    Contact: "0752164302",
+    Contact: "075 2164302",
     btnText: "Download CV",
     image: Hero_person,
     hero_content: [
