@@ -208,26 +208,35 @@ export const content = {
   },
 
   education: {
-    title: "Education",
-    subtitle: "My academic journey",
-    timeline: [
-      {
-        degree: "Bachelor of Science in Computer Science",
-        institution: "University of Colombo",
-        period: "2018 - 2022",
-        description: "Focused on software engineering, web development, and algorithms.",
-      },
-      {
-        degree: "Advanced Level",
-        institution: "Royal College, Colombo",
-        period: "2016 - 2018",
-        description: "Specialized in Physics, Mathematics, and Computer Science.",
-      },
-      {
-        degree: "Ordinary Level",
-        institution: "Royal College, Colombo",
-        period: "2010 - 2016",
-      },
-    ],
-  },
+  title: "Education",
+  subtitle: "My academic journey",
+  timeline: [
+    {
+      degree: "BSc.Computer Science",
+      institution: "Institute of Software Engineering",
+      period: "2023 - Present",
+      description: "Focused on software engineering, web development, and algorithms.",
+      logo: "/assets/images/Education/institute-of-software-engineering.png",  // Replace with your actual image path
+    },
+    {
+      degree: "Diploma in English Certificated Course",
+      institution: "VTA Horana",
+      period: "2023",
+      logo: "/assets/images/Education/vta-horana.png",  // Replace with your actual image path
+    },
+    {
+      degree: "Advanced Level",
+      institution: "K/Gnanodaya Maha Vidyalaya",
+      period: "2020-2022",
+      description: "Specialized in Accounting, Business Studies, and Economics.",
+      logo: "/assets/images/Education/gnanodaya-maha-vidyalaya.png",  // Replace with your actual image path
+    },
+    {
+      degree: "Ordinary Level",
+      institution: "K/Dharmapala Maha Vidyalaya",
+      period: "2019",
+      logo: "/assets/images/Education/dharmapala-maha-vidyalaya.png",  // Replace with your actual image path
+    },
+  ],
+},
 };

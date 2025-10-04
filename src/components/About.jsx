@@ -18,7 +18,7 @@ const About = () => {
           <div className="md:h-[37rem] h-96">
             <img
                 src={about.image}
-                data-aos="slide-up"
+                data-aos="fade-up"
                 alt="Portrait"
                 className="h-full object-cover"
             />

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import { content } from "../Content";
-import logo from "../assets/images/Education/logo.png";
+// Remove the static logo import since we're using dynamic ones now
+// import logo from "../assets/images/Education/logo.png";
 
 const Education = () => {
   const { education } = content;
@@ -55,9 +56,10 @@ const Education = () => {
                       <div className="relative z-10">
                         <div className="flex items-start gap-4 mb-4">
                           <div className="flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                            {/* Updated to use dynamic item.logo */}
                             <img
-                              src={logo}
-                              alt="Institute Logo"
+                              src={item.logo}
+                              alt={`${item.institution} Logo`}
                               className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
                             />
                           </div>
