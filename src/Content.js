@@ -12,28 +12,34 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/projects/img1.png";
-import project2 from "./assets/images/projects/img2.png";
-import project3 from "./assets/images/projects/img3.png";
+import orm from "./assets/images/Projects/ORM.png"
+import paramee from "./assets/images/projects/Paramee.png";
+import html_portfolio from "./assets/images/projects/html_portfolio.png";
+import react_portfolio from "./assets/images/projects/react_portfolio.png";
+import ecommerce from "./assets/images/projects/ecommerce.png";
 import person_project from "./assets/images/projects/person.png";
+import dream_nest from "./assets/images/projects/deream_nest.png";
 
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
+import parameeVideo from "./assets/images/Projects/video/ParameeCompany.mp4"
+import studentSystem from "./assets/images/Projects/video/StudentSyatem.mp4"
+import dreamNest from "./assets/images/Projects/video/DreamNestHotel.mp4"
+import FloraVideo from "./assets/images/Projects/video/FloraWebsite.mp4"
+import portfolio_html from "./assets/images/Projects/video/Portfolio-HTML.mp4"
 
-import Hireme_person from "./assets/images/Hireme/person.png";
-import Hireme_person2 from "./assets/images/Hireme/person2.png";
+import vta from "./assets/images/Education/vtaLogo.png";
+import Ijse from "./assets/images/Education/Ijse.png";
+import Gnanodaya from "./assets/images/Education/Gnanodaya.png";
+import Dharmapala from "./assets/images/Education/Dharmapala.png";
+
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
-import { BiBook, BiBookAlt, BiCode, BiCodeAlt, BiUser } from "react-icons/bi";
+import { BiBookAlt, BiCodeAlt, BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
-import { Contact } from "lucide-react";
 
 export const content = {
   nav: [
@@ -169,16 +175,60 @@ export const content = {
     image: person_project,
     project_content: [
       {
-        title: "Gym Website",
-        image: project1,
+        title: "Paramee Management System",
+        description: "I developed a standalone JavaFX desktop application for Paramee Ice Cream." +
+            " The user interface was designed using SceneBuilder, following a layered architecture " +
+            "(UI — Service — DAO — Database). The system uses a MySQL database for data storage and management," +
+            " and includes key features such as inventory management, customer management, order processing, " +
+            "and report generation. It was built with a focus on maintainability, testability, and production-ready" +
+            " design principles.\n",
+        image: paramee,
+        demoVideo: parameeVideo,
+        githubLink: "https://github.com/OshadhiVimarsha/Paramee_Final_Layered_Architecture.git",
       },
       {
-        title: "Social Media web",
-        image: project2,
+        title: "Student Management System",
+        image: orm,
+        description: "I developed a standalone Student Management System using JavaFX and SceneBuilder, " +
+            "integrated with a MySQL database. The system follows a layered architecture and uses Hibernate ORM " +
+            "for efficient database management. It allows for managing student records, courses, and performance " +
+            "details with a user-friendly interface and maintainable design.\n",
+        demoVideo: studentSystem,
+        githubLink: "https://github.com/OshadhiVimarsha/Student_Management_System.git",
       },
       {
-        title: "Creative Website",
-        image: project3,
+        title: "HTML, CSS Portfolio",
+        image: html_portfolio,
+        description: "I developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my projects," +
+            " skills, and experience. The site features a clean, responsive design and interactive elements to provide " +
+            "an engaging user experience across all devices.\n",
+        demoVideo: portfolio_html,
+        githubLink: "https://github.com/OshadhiVimarsha/My_Portfolio.git",
+
+      },
+      {
+        title: "Flora Ecommerce Web Application",
+        image: ecommerce,
+        description: "Flora website is a website that sells flowers. You can buy flowers here and bring them home." +
+            " There are administer features and customer features. Product, category, user add, update, delete, view etc. " +
+            "are under admin features. User login, logout, product view is under customer features. This includes database, " +
+            "tomcat, JavaEE, jsp, boostrap use.",
+        demoVideo: FloraVideo,
+        githubLink: "https://github.com/OshadhiVimarsha/Flora_Ecommerce_Web_Application.git",
+      },
+      {
+        title: "Dream Nest Hotel Website",
+        image: dream_nest,
+        description: "I developed the Dream Nest Hotel Management System using Spring Boot, " +
+            "HTML, and CSS, following a layered architecture for clean separation of concerns." +
+            " The system includes features for room reservations, customer management, and billing," +
+            " along with an admin dashboard for efficient hotel operations and data management.",
+        demoVideo: dreamNest,
+        githubLink: "https://github.com/OshadhiVimarsha/Dream_Nest_Final_Project.git",
+      },
+      {
+        title: "React Portfolio",
+        image: react_portfolio,
       },
     ],
   },
@@ -216,26 +266,26 @@ export const content = {
       institution: "Institute of Software Engineering",
       period: "2023 - Present",
       description: "Focused on software engineering, web development, and algorithms.",
-      logo: "/assets/images/Education/institute-of-software-engineering.png",  // Replace with your actual image path
+      logo: Ijse
     },
     {
       degree: "Diploma in English Certificated Course",
       institution: "VTA Horana",
       period: "2023",
-      logo: "/assets/images/Education/vta-horana.png",  // Replace with your actual image path
+      logo: vta
     },
     {
       degree: "Advanced Level",
       institution: "K/Gnanodaya Maha Vidyalaya",
       period: "2020-2022",
       description: "Specialized in Accounting, Business Studies, and Economics.",
-      logo: "/assets/images/Education/gnanodaya-maha-vidyalaya.png",  // Replace with your actual image path
+      logo: Gnanodaya
     },
     {
       degree: "Ordinary Level",
       institution: "K/Dharmapala Maha Vidyalaya",
       period: "2019",
-      logo: "/assets/images/Education/dharmapala-maha-vidyalaya.png",  // Replace with your actual image path
+      logo: Dharmapala
     },
   ],
 },
