@@ -13,7 +13,7 @@ import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
 import orm from "./assets/images/Projects/ORM.png"
-import paramee from "./assets/images/projects/Paramee.png";
+import paramee from "./assets/images/Projects/paramee.png";
 import html_portfolio from "./assets/images/projects/html_portfolio.png";
 import react_portfolio from "./assets/images/projects/react_portfolio.png";
 import ecommerce from "./assets/images/projects/ecommerce.png";
