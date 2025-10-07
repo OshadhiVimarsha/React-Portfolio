@@ -48,9 +48,9 @@ const About = () => {
             </h5>
             <button
               onClick={() => {
-                window.open("/files/My_CV.pdf", "_blank");
+                window.open("/dist/files/My_CV.pdf", "_blank");
                 const link = document.createElement("a");
-                link.href = "/files/My_CV.pdf";
+                link.href = "/dist/files/My_CV.pdf";
                 link.download = "My_CV.pdf";
                 link.click();
               }}
