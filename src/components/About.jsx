@@ -47,10 +47,16 @@ const About = () => {
                 <span className="font-bold">Contact:</span> {about.Contact}
             </h5>
             <button
-              onClick={() => window.open("/files/My_CV.pdf", "_blank")}
+              onClick={() => {
+                window.open("/files/My_CV.pdf", "_blank");
+                const link = document.createElement("a");
+                link.href = "/files/My_CV.pdf";
+                link.download = "My_CV.pdf";
+                link.click();
+              }}
               className="mt-6 font-semibold text-white bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-full transition-colors duration-200 shadow-md hover:shadow-lg"
-              >
-              {about.btnText || "Download CV"}
+            >
+              View & Download CV
             </button>
 
           </div>
