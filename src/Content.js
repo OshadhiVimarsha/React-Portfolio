@@ -21,6 +21,7 @@ import firebase from "./assets/images/Skills/firebase.png";
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
+import services_logo4 from "./assets/images/Services/logo4.png";
 
 import orm from "./assets/images/Projects/ORM.png"
 import paramee from "./assets/images/Projects/paramee.png";
@@ -195,19 +196,25 @@ export const content = {
     service_content: [
       {
         title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "I build responsive and modern websites using the latest web technologies, ensuring optimal performance and user-friendly experiences.",
         logo: services_logo1,
       },
       {
-        title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "Mobile App Development",
+        para: "I create intuitive and high-performing mobile applications for Android and iOS, designed to provide seamless user experiences.",
+        logo: services_logo4,
+      },
+      {
+        title: "UI / UX Designing",
+        para: "I design visually appealing and user-centric interfaces, focusing on usability and aesthetic appeal to enhance digital experiences.",
         logo: services_logo2,
       },
       {
         title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "I provide professional image editing and manipulation services, from retouching to creative graphics, ensuring high-quality visuals.",
         logo: services_logo3,
       },
+
     ],
   },
   
