@@ -50,6 +50,7 @@ import { TbSmartHome } from "react-icons/tb";
 import { BiBookAlt, BiCodeAlt, BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
+import { desc } from "framer-motion/client";
 
 export const content = {
   nav: [
@@ -83,7 +84,8 @@ export const content = {
     },
   ],
   hero: {
-    title: "Web Developer",
+    title: "Trainee Software Engineer",
+    subtitle: "Hello! I'm",
     name: "Oshadhi Vimarsha",
     btnText: "Hire Me",
     link: "#contact",
