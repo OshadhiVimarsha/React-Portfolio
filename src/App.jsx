@@ -38,10 +38,58 @@ const App = () => {
       <Projects darkMode={darkMode} />
       <Contact darkMode={darkMode} />
 
-      <footer className="p-3 text-center bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-        <h6 className="mb-3">JOHN ALEX</h6>
-        <p>codeaprogram © All CopyRights Reserved 2022</p>
+      <footer className="relative bg-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-cyan-600 py-6 px-4 mt-10 shadow-lg">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Decorative line */}
+          <div className="flex justify-center mb-3">
+            <span className="inline-block w-16 h-[2px] bg-cyan-600 rounded-full"></span>
+          </div>
+
+          <h6 className="text-xl font-semibold tracking-wider mb-2 hover:text-cyan-600 transition-colors duration-300">
+            OSHADHI VIMARSHA
+          </h6>
+
+          <h1 className="text-xl font-semibold tracking-wider mb-2 hover:text-cyan-600 transition-colors duration-300">
+            Trainee Software Engineer
+          </h1>
+
+          <p className="text-sm text-cyan-600">
+            My Portfolio © All Rights Reserved 2025
+          </p>
+
+          {/* Social Icons */}
+          <div className="flex justify-center gap-5 mt-4">
+            <a
+              href="https://github.com/OshadhiVimarsha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-600 hover:text-cyan-700 hover:scale-110 transition-transform duration-300"
+            >
+              <i className="fab fa-github text-xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/oshadhi-vimarsha-liyanage-0102a2383"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-600 hover:text-cyan-700 hover:scale-110 transition-transform duration-300"
+            >
+              <i className="fab fa-linkedin text-xl"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/oshivimarsha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-600 hover:text-cyan-700 hover:scale-110 transition-transform duration-300"
+            >
+              <i className="fab fa-instagram text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        {/* Glow Effect */}
+        <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-cyan-300 via-transparent to-cyan-600 blur-3xl pointer-events-none"></div>
       </footer>
+
     </div>
   );
 };

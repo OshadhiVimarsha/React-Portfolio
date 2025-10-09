@@ -295,15 +295,10 @@ export const content = {
         icon: MdCall,
         link: "https://wa.me/0752164302",
       },
-      {
-        text: "codeaprogram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
-      },
     ],
   },
   Footer: {
-    text: "All © Copy Right Reserved 2022",
+    text: "All © Copy Right Reserved 2025",
   },
 
   education: {
