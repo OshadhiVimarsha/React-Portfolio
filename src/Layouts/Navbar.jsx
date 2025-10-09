@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useState, createElement } from "react";
 import { content } from "../Content";
 import { HiMenuAlt2 } from "react-icons/hi";
-import { createElement } from "react";
 
 const Navbar = () => {
   const { nav } = content;
@@ -10,23 +9,29 @@ const Navbar = () => {
 
   return (
     <div className="w-full flex justify-center">
+      {/* Menu toggle button */}
       <div
-        className="sm:cursor-pointer fixed top-10 left-10 z-[999] rounded-lg bg-white/40 p-2"
+        className="cursor-pointer fixed top-6 left-6 z-[999] rounded-lg bg-white/60 p-2 sm:hidden"
         onClick={() => setShowMenu(!showMenu)}
       >
-        <HiMenuAlt2 size={34} />
+        <HiMenuAlt2 size={28} />
       </div>
+
+      {/* Navbar icons */}
       <nav
-        className={`fixed  z-[999] flex items-center gap-5 bg-slate-200/60 px-6 py-3 backdrop-blur-md rounded-full text-dark_primary duration-300 ${
-          showMenu ? "bottom-10" : "bottom-[-100%]"
-        }`}
+        className={`fixed z-[998] flex items-center gap-3 sm:gap-5 
+          bg-slate-200/70 px-4 sm:px-6 py-2 sm:py-3 backdrop-blur-md rounded-full 
+          text-dark_primary shadow-md duration-300 transition-all
+          ${showMenu ? "bottom-6 opacity-100" : "bottom-[-100%] opacity-0"}
+          sm:bottom-6 sm:opacity-100`}
       >
         {nav.map((item, i) => (
           <a
+            key={i}
             href={item.link}
             onClick={() => setActive(i)}
-            className={`text-xl p-2.5 rounded-full sm:cursor-pointer 
-     ${i === active && "bg-dark_primary text-white"} `}
+            className={`text-lg sm:text-xl p-2 sm:p-2.5 rounded-full transition-all duration-200 
+              ${i === active ? "bg-dark_primary text-white" : "hover:bg-dark_primary hover:text-white"}`}
           >
             {createElement(item.icon)}
           </a>
