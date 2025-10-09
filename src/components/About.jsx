@@ -12,7 +12,7 @@ const About = () => {
 
   return (
     <section className="bg-bg_white min-h-screen flex items-center justify-center" id="about">
-      <div className="md:container px-5 py-24">
+      <div className="md:container px-5 py-10">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
           <div className="md:h-[37rem] h-96">
