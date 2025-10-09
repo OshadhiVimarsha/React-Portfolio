@@ -43,7 +43,7 @@ const Skills = () => {
         <h4 className="subtitle text-center mb-10">{skills.subtitle}</h4>
       </div>
 
-      {/* Continuous scroll from right to left */}
+      {/* Continuous scroll */}
       <div className="overflow-hidden relative">
         <div className="flex animate-marquee gap-6 whitespace-nowrap">
           {scrollSkills.map((skill, i) => (
@@ -59,11 +59,11 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* CSS for right-to-left continuous scroll */}
+      {/* CSS for nonstop scroll */}
       <style jsx>{`
         @keyframes marquee {
           0% {
-            transform: translateX(100%);
+            transform: translateX(0);
           }
           100% {
             transform: translateX(-50%);
@@ -72,6 +72,7 @@ const Skills = () => {
         .animate-marquee {
           display: inline-flex;
           animation: marquee 20s linear infinite;
+          will-change: transform;
         }
       `}</style>
     </section>
